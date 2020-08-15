@@ -28,7 +28,7 @@ With the following command you can view the list of images created
 
 The following command will create the container called **sql-server-container** using the **sql-server** image.
 
-`docker run -d -p 1433: 1433 --name sql-server-container sql-server`
+`docker run -d -p 1433:1433 --name sql-server-container sql-server`
 
 > The password assigned to the user **SA** is _Sa.@2020Password_
 
