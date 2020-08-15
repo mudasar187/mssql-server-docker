@@ -1,4 +1,4 @@
-## Microsoft SQL Server on Docker
+# Microsoft SQL Server on Docker
 
 Image is created using _mcr.microsoft.com/mssql/server:2019-CU6-ubuntu-16.04_ as a database, were the following databases are restored:
 
@@ -14,7 +14,7 @@ The user _AdventureUser_ is created and associated with each of these databases 
 
 - Docker
 
-# Build sql-server image
+## Build sql-server image
 
 To build the image run:
 
@@ -24,7 +24,7 @@ With the following command you can view the list of images created
 
 `docker images`
 
-# Run the container
+## Run the container
 
 The following command will create the container called **sql-server-container** using the **sql-server** image.
 
@@ -34,7 +34,7 @@ The following command will create the container called **sql-server-container** 
 
 > The port through which the service is exposed is 1433.
 
-# Connection
+## Connection
 
 To connect from the host to the container use the following parameters.
 
@@ -43,7 +43,7 @@ To connect from the host to the container use the following parameters.
 - Users: sa, AdventureUser
 - Password: Sa.@2020Password, Adventure.@2018
 
-# Observations
+## Observations
 
 - This image has been configured to allocate 2GB of RAM. To change this parameter, locate the following line `/opt/mssql/bin/mssql-conf set memory.memorylimitmb 2048` in the `Restore.sh` file and assign the desired value and then build the image.
 
