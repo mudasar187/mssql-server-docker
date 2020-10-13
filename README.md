@@ -41,7 +41,7 @@ To connect from the host to the container use the following parameters.
 - Server: localhost, 1433
 - Authentication type: SQL Authentication
 - Users: sa, AdventureUser
-- Password: Sa.@2020Password,  Adventure.@2020
+- Password: Sa.@2020Password, Adventure.@2020
 
 ## Observations
 
